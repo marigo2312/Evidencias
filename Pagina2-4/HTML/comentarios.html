@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guía turística de [Ciudad]">
+    <meta name="keywords" content="Turismo, [Ciudad], Guía">
+    <title>Guía Turística - [Nombre de la Página]</title>
+    <link rel="stylesheet" href="../CSS/estilo.css">
+</head>
+
+<body>
+    <header>
+        <h1>Guía Turística de [Ciudad]</h1>
+    </header>
+    <nav>
+        <a href="../../index.html">Regresar a Evidencias</a>
+        <a href="index.html">Home</a>
+        <a href="blogPrincipal.html">Blog</a>
+        <a href="entradaBlog.html">Entradas</a>
+        <a href="comentarios.html">Comentarios</a>
+        <a href="inicio.html">Guia Turistica</a>
+    </nav>
+    <main>
+        <!-- Contenido principal específico de la página -->
+        <section>
+            <h2>Deja tu Comentario</h2>
+            <form action="procesar_comentario.php" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="comentario">Comentario:</label>
+                <textarea id="comentario" name="comentario" rows="5" required></textarea>
+
+                <button type="submit">Enviar Comentario</button>
+            </form>
+        </section>
+        <section>
+            <h2>Comentarios Recientes</h2>
+            <div class="comentario">
+                <p><strong>Juan Pérez</strong> <em>01/03/2025</em></p>
+                <p>Excelente guía turística, muy informativa y práctica. Me encantó la sección de
+                    lugares de interés.</p>
+            </div>
+            <div class="comentario">
+                <p><strong>María García</strong> <em>28/02/2025</em></p>
+                <p>Muy buen contenido, la información es muy útil para planificar mi próxima
+                    visita a la ciudad.</p>
+            </div>
+            <!-- Se pueden agregar más comentarios aquí -->
+        </section>
+    </main>
+    <aside>
+        <!-- Información complementaria, como enlaces a redes sociales o datos curiosos -->
+        <h3>Información Adicional</h3>
+        <p>Para más detalles sobre la guía turística, visita nuestra página de <a href="contacto.html">Contacto</a> o
+            suscríbete al boletín.</p>
+    </aside>
+    <footer>
+        <p>&copy; 2025 Guía Turística de [Ciudad]. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
